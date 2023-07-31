@@ -1,0 +1,19 @@
+.nav-button {
+    margin-right: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.nav {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    border-bottom: 4px solid rgba(0, 171, 209, 100.0);
+}
+
+.user-name {
+    font-size: small;
+}

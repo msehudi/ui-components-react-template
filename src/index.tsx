@@ -8,18 +8,14 @@ import { HomeRoute } from './routes/home';
 import App from './App';
 
 import './App.css';
+import { oidcConfig } from './Keycloak';
+import { AuthProvider } from 'react-oidc-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="basic-form-success" element={<BasicFormSuccessRoute />} />
-          <Route path="basic-form" element={<BasicFormRoute />} />
-          <Route path="/" element={<HomeRoute />} />
-        </Route>
-      </Routes>
-    </Router>
+    <AuthProvider {...oidcConfig}>
+      <App />
+    </AuthProvider>
   </React.StrictMode>,
 );

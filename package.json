@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@abgov/web-components": "^1.10.0",
     "@abgov/react-components": "^4.10.0",
+    "@abgov/web-components": "^1.10.0",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-oidc-context": "^2.2.2",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
